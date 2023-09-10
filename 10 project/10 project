@@ -1,0 +1,29 @@
+// Define a class called "Person"
+class Person {
+  // Properties (attributes)
+  firstName: string;
+  lastName: string;
+  age: number;
+
+  // Constructor - a special method to initialize object properties
+  constructor(firstName: string, lastName: string, age: number) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+  }
+
+  // Method to greet
+  greet() {
+    console.log(`Hello, my name is ${this.firstName} ${this.lastName}, and I am ${this.age} years old.`);
+  }
+}
+
+// Create objects (instances) of the Person class
+const person1 = new Person("John", "Doe", 30);
+const person2 = new Person("Jane", "Smith", 25);
+
+// Call methods on objects
+person1.greet();
+person2.greet();
+Hello, my name is John Doe, and I am 30 years old.
+Hello, my name is Jane Smith, and I am 25 years old.
